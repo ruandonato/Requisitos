@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :kanbans
   resources :stories
   resources :projects
   # The priority is based upon order of creation: first created -> highest priority.

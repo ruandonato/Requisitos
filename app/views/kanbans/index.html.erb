@@ -1,0 +1,31 @@
+<div class="page-header">
+  <%= link_to new_kanban_path, class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-plus"></span>
+    New Kanban
+  <% end %>
+  <h1>Listing kanbans</h1>
+</div>
+
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-hover">
+    <thead>
+      <tr>
+            <th>Project</th>
+            <th>Stories</th>
+            <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <%= content_tag_for(:tr, @kanbans) do |kanban| %>
+            <td><%= kanban.project %></td>
+            <td><%= kanban.stories %></td>
+            <td><%= link_to 'Show', kanban %></td>
+        <td><%= link_to 'Edit', edit_kanban_path(kanban) %></td>
+        <td><%= link_to 'Destroy', kanban, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <% end %>
+    </tbody>
+  </table>
+</div>

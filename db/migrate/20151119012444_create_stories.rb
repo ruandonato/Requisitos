@@ -11,6 +11,7 @@ class CreateStories < ActiveRecord::Migration
       t.text :observations
       t.text :task
       t.integer :release
+      t.belongs_to :project, index:true, foreign_key:true
 
       t.timestamps null: false
     end

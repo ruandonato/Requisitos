@@ -11,7 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151119012444) do
+ActiveRecord::Schema.define(version: 20151119015506) do
+
+  create_table "kanbans", force: :cascade do |t|
+    t.integer  "project_id"
+    t.integer  "stories_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "kanbans", ["project_id"], name: "index_kanbans_on_project_id"
 
   create_table "projects", force: :cascade do |t|
     t.string   "name"
@@ -32,8 +41,11 @@ ActiveRecord::Schema.define(version: 20151119012444) do
     t.text     "observations"
     t.text     "task"
     t.integer  "release"
+    t.integer  "project_id"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
   end
+
+  add_index "stories", ["project_id"], name: "index_stories_on_project_id"
 
 end
