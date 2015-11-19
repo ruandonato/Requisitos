@@ -7,7 +7,7 @@
     <span class="glyphicon glyphicon-pencil"></span>
     Edit
   <% end %>
-  <h1>Show project</h1>
+  <h1>Details</h1>
 </div>
 
 <dl class="dl-horizontal">
@@ -20,4 +20,7 @@
   <dt>Description:</dt>
   <dd><%= @project.description %></dd>
 
+ </button>
+        <%= link_to "Creat user stories", "/stories", class: "navbar-brand" %>
+      </div>
 </dl>
