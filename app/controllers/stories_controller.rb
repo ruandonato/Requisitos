@@ -10,6 +10,9 @@ class StoriesController < ApplicationController
   # GET /stories/1
   # GET /stories/1.json
   def show
+    @todo = Story.where(status:"To do");
+    @doing = Story.where(status:"Doing")
+    @done = Story.where(status:"Done");
   end
 
   # GET /stories/new

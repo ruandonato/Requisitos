@@ -23,11 +23,31 @@
   <hr>
   
   <h4>Stories</h4>
-  <% @project.stories.each do |story| %>
-  <hr>
-   <li><%= "#{story.description} - #{story.status}" %></li>
-  
+
+<div class='row'> 
+
+  <h6>To do</h6>
+<div class='col-md-4'>   
+  <%@todo.each do|story|%>
+  <li><%= "#{story.description}"%></li>
   <% end %>
+    </div> 
+
+<h6>Doing</h6>
+<div class='col-md-4'>
+  <%@doing.each do|story|%>
+  <li><%= "#{story.description}"%></li>
+  <% end %>
+  </div> 
+
+<h6>Done</h6>
+<div class='col-md-4'>
+  <%@done.each do|story|%>
+  <li><%= "#{story.description}"%></li>
+  <% end %>
+    </div>
+
+    </div>
 <br>
  </button>
         <%= link_to "Creat story", "/stories/new", class: "navbar-brand" %>
