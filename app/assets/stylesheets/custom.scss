@@ -1,0 +1,70 @@
+ .col-md-4{
+  padding: 25px;
+  border: 1px solid #bbb;
+ }
+.todo {
+p{
+  font-family: Arial;
+  font-size: 15px;
+  color: black;
+}
+h6{
+  display: block;
+font-family: Arial;
+font-size: 20px;
+background: none repeat scroll 0% 0% rgb(187, 187, 187);
+padding: 10px 0px;
+background: white;
+border: 5px solid #bbb;
+padding-left: 10px;
+padding-right: 10px;
+text-transform: uppercase;
+}
+
+  background: yellow;
+  min-height: 400px;
+}
+
+.doing{
+p{
+  font-family: Arial;
+  font-size: 15 px;
+  color: white;
+}
+h6{
+  display: block;
+font-family: Arial;
+font-size: 20px;
+background: none repeat scroll 0% 0% rgb(187, 187, 187);
+padding: 10px 0px;
+background: white;
+border: 5px solid #bbb;
+padding-left: 10px;
+padding-right: 10px;
+text-transform: uppercase;
+}
+
+  background: green;
+  min-height: 400px;
+}
+
+.done
+{
+
+h6{
+  display: block;
+font-family: Arial;
+font-size: 20px;
+background: none repeat scroll 0% 0% rgb(187, 187, 187);
+padding: 10px 0px;
+background: white;
+border: 5px solid #bbb;
+padding-left: 10px;
+padding-right: 10px;
+text-transform: uppercase;
+}
+
+  background: gray;
+  min-height: 400px; 
+
+}

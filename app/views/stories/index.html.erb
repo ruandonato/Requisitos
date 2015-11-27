@@ -3,6 +3,12 @@
     <span class="glyphicon glyphicon-plus"></span>
     New Story
   <% end %>
+
+  <%= form_tag(stories_path, :method => :get) do %>
+  <%= text_field_tag 'search', nil, placeholder: 'Papel/Ação/Razão' %>
+  <%= submit_tag "Pesquisa" %>
+  <% end %>
+
   <h1>Listing stories</h1>
 </div>
 

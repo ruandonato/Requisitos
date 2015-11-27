@@ -4,8 +4,8 @@ class ProjectsController < ApplicationController
   # GET /projects
   # GET /projects.json
   def index
-    @projects = Project.all
-  end
+    @projects = Project.where("name like '%#{params[:searchs]}%'")
+end
 
   # GET /projects/1
   # GET /projects/1.json

@@ -1,9 +1,15 @@
 <div class="page-header">
   <%= link_to new_project_path, class: 'btn btn-primary' do %>
     <span class="glyphicon glyphicon-plus"></span>
-    New project
+    Novo Projeto
   <% end %>
-  <h1>My projects</h1>
+  
+ <%= form_tag(projects_path, :method => :get) do %>
+  <%= text_field_tag 'searchs', nil, placeholder: 'Nome' %>
+  <%= submit_tag "Pesquisa" %>
+  <% end %>
+
+  <h1>Meus projetos</h1>
 </div>
 
 <div class="table-responsive">
@@ -11,8 +17,8 @@
     <thead>
       <tr>
             <th>Name</th>
-            <th>Owner</th>
-            <th>Description</th>
+            <th>Responsável</th>
+            <th>Descrição</th>
             <th></th>
         <th></th>
         <th></th>
@@ -24,9 +30,9 @@
             <td><%= project.name %></td>
             <td><%= project.owner %></td>
             <td><%= project.description %></td>
-            <td><%= link_to 'Details', project %></td>
-        <td><%= link_to 'Edit', edit_project_path(project) %></td>
-        <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <td><%= link_to 'Detalhes', project %></td>
+        <td><%= link_to 'Editar', edit_project_path(project) %></td>
+        <td><%= link_to 'Deletar', project, method: :delete, data: { confirm: 'Tem certeza que deseja deletar' } %></td>
       <% end %>
     </tbody>
   </table>

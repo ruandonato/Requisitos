@@ -1,20 +1,20 @@
 <div class="page-header">
   <%= link_to kanbans_path, class: 'btn btn-default' do %>
     <span class="glyphicon glyphicon-list-alt"></span>
-    Back
+    Voltar
   <% end %>
   <%= link_to edit_kanban_path(@kanban), class: 'btn btn-primary' do %>
     <span class="glyphicon glyphicon-pencil"></span>
-    Edit
+    Editar
   <% end %>
   <h1>Show kanban</h1>
 </div>
 
 <dl class="dl-horizontal">
-  <dt>Project:</dt>
+  <dt>Projetos:</dt>
   <dd><%= @kanban.project %></dd>
 
-  <dt>Stories:</dt>
+  <dt>Histórias:</dt>
   <dd><%= @kanban.stories %></dd>
 
 </dl>

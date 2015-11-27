@@ -4,15 +4,16 @@ class StoriesController < ApplicationController
   # GET /stories
   # GET /stories.json
   def index
+    if params[:search]
+    @stories = Story.where("description like '%#{params[:search]}%'")
+    else
     @stories = Story.all
   end
+end
 
   # GET /stories/1
   # GET /stories/1.json
   def show
-    @todo = Story.where(status:"To do");
-    @doing = Story.where(status:"Doing")
-    @done = Story.where(status:"Done");
   end
 
   # GET /stories/new
@@ -75,4 +76,5 @@ class StoriesController < ApplicationController
     def story_params
       params.require(:story).permit(:role, :action, :reason, :description , :status, :estimate, :acceptance, :observations, :task, :release, :project_id)
     end
+
 end
