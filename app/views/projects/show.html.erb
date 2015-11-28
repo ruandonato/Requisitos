@@ -11,42 +11,56 @@
   <h1>Detalhes do projeto</h1>
 </div>
 
-  <dt>Nome:</dt>
-  <dd><%= @project.name %></dd>
+<dt>Nome:</dt>
+<dd><%= @project.name %></dd>
 
-  <dt>Responsável:</dt>
-  <dd><%= @project.owner %></dd>
+<dt>Responsável:</dt>
+<dd><%= @project.owner %></dd>
 
-  <dt>Descrição:</dt>
-  <dd><%= @project.description %></dd>
-  <hr>
+<dt>Descrição:</dt>
+<dd><%= @project.description %></dd>
+<hr>
+<%= link_to "Criar História", "/stories/new", class: "btn btn-primary" %>
+<hr>
 
-        <%= link_to "Criar História", "/stories/new", class: "navbar-brand" %>
-      </div>
-</dl>
-
-<div class='row'> 
-
-<div class='col-md-4 todo'>   
-  <h6>Fazer</h6>
-  <%@todo.each do|story|%>
-    <p><%= "#{story.description}"%></p>
-  <% end %>
-  </div> 
-
-  <div class='col-md-4 doing' >
-    <h6>Fazendo</h6>
-      <%@doing.each do|story|%>
-     <p> <%= "#{story.description}"%></p>
-    <% end %>
-  </div> 
-
-  <div class='col-md-4 done'>
-    <h6>Feito</h6>
-     <%@done.each do|story|%>
-      <p><%= "#{story.description}"%></p>
-    <% end %>
+<div class='row'>
+  <div class="col-md-4">
+    <div class='panel panel-info'>   
+      <div class="panel-heading">FAZER</div>
+      <ul class="list-group">
+        <%@todo.each do|story|%>
+          <li class="list-group-item">
+            <p><%= "#{story.description}"%></p>
+          </li>
+        <% end %>
+      </ul>
+    </div> 
   </div>
 
+  <div class="col-md-4">
+    <div class='panel panel-warning'>   
+      <div class="panel-heading">FAZENDO</div>
+      <ul class="list-group">
+        <%@doing.each do|story|%>
+          <li class="list-group-item">
+            <p><%= "#{story.description}"%></p>
+          </li>
+        <% end %>
+      </ul>
+    </div> 
+  </div>
+
+  <div class="col-md-4">
+    <div class='panel panel-success'>   
+      <div class="panel-heading">FEITO</div>
+      <ul class="list-group">
+        <%@done.each do|story|%>
+          <li class="list-group-item">
+            <p><%= "#{story.description}"%></p>
+          </li>
+        <% end %>
+      </ul>
+    </div> 
+  </div>
 </div>
 <br>
