@@ -3,10 +3,13 @@
     <span class="glyphicon glyphicon-plus"></span>
     Novo Projeto
   <% end %>
-  
- <%= form_tag(projects_path, :method => :get) do %>
-  <%= text_field_tag 'searchs', nil, placeholder: 'Nome' %>
-  <%= submit_tag "Pesquisa" %>
+  <div class="row">
+    <div class="col-sm-3">
+      <%= form_tag(projects_path, :method => :get) do %>
+      <%= text_field_tag 'searchs', nil, placeholder: 'Nome', class: "form-control" %>
+    </div>
+    <%= submit_tag "Pesquisa", class: "btn btn-primary" %>
+  </div>
   <% end %>
 
   <h1>Meus projetos</h1>
