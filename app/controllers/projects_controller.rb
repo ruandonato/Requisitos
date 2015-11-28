@@ -10,9 +10,9 @@ end
   # GET /projects/1
   # GET /projects/1.json
   def show
-    @todo = Story.where(status:"Fazer")
-    @doing = Story.where(status:"Fazendo")
-    @done = Story.where(status:"Feito ")
+    @todo = Story.where(status:"Fazer", project_id: params[:id])
+    @doing = Story.where(status:"Fazendo", project_id: params[:id])
+    @done = Story.where(status:"Feito", project_id: params[:id])
   end
 
   # GET /projects/new
