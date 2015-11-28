@@ -9,17 +9,17 @@ project_list = [
 story_list = [
   ["usuário","visualizar em quais programas um determinado órgão investiu","ver a relação destes programas com os órgãos públicos","Fazer", 3,"Nome dos programas, órgão e investimento", "Utilizar dados públicos do orgão XPTO", "Realizar busca em banco, contruir campos na view",2],
   ["usuário","visualizar quais empreses foram contratadas por determinado órgão público", "ver a relação destas empresas com os órgãos públicos", "Fazer", 3, "Nome da empresa, CNPJ, status de contratação", "Dado público do orgão XPTO","Realizar busca em banco, construir view", 2],
-  ["usuário","visualizar os gastos da federação por função", "ver em que áreas a federação está gastando mais recursos", "Fazendo", 3, "Nome da empresa, CNPJ, status de contratação", "Dado público do orgão XPTO","Realizar busca em banco, construir view", 2],
-  ["usuário","comparar o orçamento dos órgãos públicos com seus gastos", "diferenciar a quantia investida do orçado", "Feito", 3, "Nome da empresa, CNPJ, status de contratação", "Dado público do orgão XPTO","Realizar busca em banco, construir view", 2],
+  ["usuário","visualizar os gastos da federação por função", "ver em que áreas a federação está gastando mais recursos", "Fazendo", 1, "Nome da empresa, CNPJ, status de contratação", "Dado público do orgão XPTO","Realizar busca em banco, construir view", 2],
+  ["usuário","comparar o orçamento dos órgãos públicos com seus gastos", "diferenciar a quantia investida do orçado", "Feito", 5, "Nome da empresa, CNPJ, status de contratação", "Dado público do orgão XPTO","Realizar busca em banco, construir view", 2],
   ["usuário","visualizar os gastos da federação por função", "ver em que áreas a federação está gastando mais recursos", "Feito", 3, "Nome da empresa, CNPJ, status de contratação", "Dado público do orgão XPTO","Realizar busca em banco, construir view", 2],
-  ["usuário","comparar o orçamento dos órgãos públicos com seus gastos", "diferenciar a quantia investida do orçado", "Fazer", 3, "Nome da empresa, CNPJ, status de contratação", "Dado público do orgão XPTO","Realizar busca em banco, construir view", 2]
+  ["usuário","comparar o orçamento dos órgãos públicos com seus gastos", "diferenciar a quantia investida do orçado", "Fazer", 8, "Nome da empresa, CNPJ, status de contratação", "Dado público do orgão XPTO","Realizar busca em banco, construir view", 2]
 ]
 
 story_list_second = [
   ["usuário","visualizar em quais programas um determinado órgão investiu","ver a relação destes programas com os órgãos públicos","Feito", 3,"Nome dos programas, órgão e investimento", "Utilizar dados públicos do orgão XPTO", "Realizar busca em banco, contruir campos na view",2],
   ["usuário","visualizar quais empreses foram contratadas por determinado órgão público", "ver a relação destas empresas com os órgãos públicos", "Fazer", 3, "Nome da empresa, CNPJ, status de contratação", "Dado público do orgão XPTO","Realizar busca em banco, construir view", 2],
-  ["usuário","visualizar os gastos da federação por função", "ver em que áreas a federação está gastando mais recursos", "Fazer", 3, "Nome da empresa, CNPJ, status de contratação", "Dado público do orgão XPTO","Realizar busca em banco, construir view", 2],
-  ["usuário","comparar o orçamento dos órgãos públicos com seus gastos", "diferenciar a quantia investida do orçado", "Fazendo", 3, "Nome da empresa, CNPJ, status de contratação", "Dado público do orgão XPTO","Realizar busca em banco, construir view", 2],
+  ["usuário","visualizar os gastos da federação por função", "ver em que áreas a federação está gastando mais recursos", "Fazer", 8, "Nome da empresa, CNPJ, status de contratação", "Dado público do orgão XPTO","Realizar busca em banco, construir view", 2],
+  ["usuário","comparar o orçamento dos órgãos públicos com seus gastos", "diferenciar a quantia investida do orçado", "Fazendo", 8, "Nome da empresa, CNPJ, status de contratação", "Dado público do orgão XPTO","Realizar busca em banco, construir view", 2],
   ["usuário","visualizar os gastos da federação por função", "ver em que áreas a federação está gastando mais recursos", "Fazendo", 3, "Nome da empresa, CNPJ, status de contratação", "Dado público do orgão XPTO","Realizar busca em banco, construir view", 2],
   ["usuário","comparar o orçamento dos órgãos públicos com seus gastos", "diferenciar a quantia investida do orçado", "Fazendo", 3, "Nome da empresa, CNPJ, status de contratação", "Dado público do orgão XPTO","Realizar busca em banco, construir view", 2]
 ]
@@ -29,16 +29,16 @@ story_list_third = [
   ["usuário","visualizar quais empreses foram contratadas por determinado órgão público", "ver a relação destas empresas com os órgãos públicos", "Fazer", 3, "Nome da empresa, CNPJ, status de contratação", "Dado público do orgão XPTO","Realizar busca em banco, construir view", 2],
   ["usuário","visualizar os gastos da federação por função", "ver em que áreas a federação está gastando mais recursos", "Fazer", 3, "Nome da empresa, CNPJ, status de contratação", "Dado público do orgão XPTO","Realizar busca em banco, construir view", 2],
   ["usuário","comparar o orçamento dos órgãos públicos com seus gastos", "diferenciar a quantia investida do orçado", "Feito", 3, "Nome da empresa, CNPJ, status de contratação", "Dado público do orgão XPTO","Realizar busca em banco, construir view", 2],
-  ["usuário","visualizar os gastos da federação por função", "ver em que áreas a federação está gastando mais recursos", "Feito", 3, "Nome da empresa, CNPJ, status de contratação", "Dado público do orgão XPTO","Realizar busca em banco, construir view", 2],
-  ["usuário","comparar o orçamento dos órgãos públicos com seus gastos", "diferenciar a quantia investida do orçado", "Fazendo", 3, "Nome da empresa, CNPJ, status de contratação", "Dado público do orgão XPTO","Realizar busca em banco, construir view", 2]
+  ["usuário","visualizar os gastos da federação por função", "ver em que áreas a federação está gastando mais recursos", "Feito", 5, "Nome da empresa, CNPJ, status de contratação", "Dado público do orgão XPTO","Realizar busca em banco, construir view", 2],
+  ["usuário","comparar o orçamento dos órgãos públicos com seus gastos", "diferenciar a quantia investida do orçado", "Fazendo", 5, "Nome da empresa, CNPJ, status de contratação", "Dado público do orgão XPTO","Realizar busca em banco, construir view", 2]
 ]
 
 story_list_forth = [
   ["usuário","visualizar em quais programas um determinado órgão investiu","ver a relação destes programas com os órgãos públicos","Fazer", 3,"Nome dos programas, órgão e investimento", "Utilizar dados públicos do orgão XPTO", "Realizar busca em banco, contruir campos na view",2],
   ["usuário","visualizar quais empreses foram contratadas por determinado órgão público", "ver a relação destas empresas com os órgãos públicos", "Fazer", 3, "Nome da empresa, CNPJ, status de contratação", "Dado público do orgão XPTO","Realizar busca em banco, construir view", 2],
-  ["usuário","visualizar os gastos da federação por função", "ver em que áreas a federação está gastando mais recursos", "Fazer", 3, "Nome da empresa, CNPJ, status de contratação", "Dado público do orgão XPTO","Realizar busca em banco, construir view", 2],
-  ["usuário","comparar o orçamento dos órgãos públicos com seus gastos", "diferenciar a quantia investida do orçado", "Fazendo", 3, "Nome da empresa, CNPJ, status de contratação", "Dado público do orgão XPTO","Realizar busca em banco, construir view", 2],
-  ["usuário","visualizar os gastos da federação por função", "ver em que áreas a federação está gastando mais recursos", "Fazer", 3, "Nome da empresa, CNPJ, status de contratação", "Dado público do orgão XPTO","Realizar busca em banco, construir view", 2],
+  ["usuário","visualizar os gastos da federação por função", "ver em que áreas a federação está gastando mais recursos", "Fazer", 5, "Nome da empresa, CNPJ, status de contratação", "Dado público do orgão XPTO","Realizar busca em banco, construir view", 2],
+  ["usuário","comparar o orçamento dos órgãos públicos com seus gastos", "diferenciar a quantia investida do orçado", "Fazendo", 5, "Nome da empresa, CNPJ, status de contratação", "Dado público do orgão XPTO","Realizar busca em banco, construir view", 2],
+  ["usuário","visualizar os gastos da federação por função", "ver em que áreas a federação está gastando mais recursos", "Fazer", 8, "Nome da empresa, CNPJ, status de contratação", "Dado público do orgão XPTO","Realizar busca em banco, construir view", 2],
   ["usuário","comparar o orçamento dos órgãos públicos com seus gastos", "diferenciar a quantia investida do orçado", "Fazer", 3, "Nome da empresa, CNPJ, status de contratação", "Dado público do orgão XPTO","Realizar busca em banco, construir view", 2]
 ]
 

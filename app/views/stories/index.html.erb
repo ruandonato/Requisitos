@@ -3,10 +3,13 @@
     <span class="glyphicon glyphicon-plus"></span>
     Novo História
   <% end %>
-
-  <%= form_tag(stories_path, :method => :get) do %>
-  <%= text_field_tag 'search', nil, placeholder: 'Papel/Ação/Razão' %>
-  <%= submit_tag "Pesquisa" %>
+  <div class="row">
+    <div class="col-sm-3">
+      <%= form_tag(stories_path, :method => :get) do %>
+      <%= text_field_tag 'search', nil, placeholder: 'Descrição', class: "form-control" %>
+    </div>
+    <%= submit_tag "Pesquisa", class: "btn btn-primary" %>
+  </div>
   <% end %>
 
   <h1>Lista de Histórias</h1>
