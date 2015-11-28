@@ -10,9 +10,9 @@ end
   # GET /projects/1
   # GET /projects/1.json
   def show
-    @todo = Story.where(status:"To do");
-    @doing = Story.where(status:"Doing")
-    @done = Story.where(status:"Done");
+    @todo = Story.where(status:"Fazer")
+    @doing = Story.where(status:"Fazendo")
+    @done = Story.where(status:"Feito ")
   end
 
   # GET /projects/new
@@ -31,7 +31,7 @@ end
 
     respond_to do |format|
       if @project.save
-        format.html { redirect_to @project, notice: 'Project was successfully created.' }
+        format.html { redirect_to @project, notice: 'Projeto criado com sucesso.' }
         format.json { render :show, status: :created, location: @project }
       else
         format.html { render :new }
@@ -45,7 +45,7 @@ end
   def update
     respond_to do |format|
       if @project.update(project_params)
-        format.html { redirect_to @project, notice: 'Project was successfully updated.' }
+        format.html { redirect_to @project, notice: 'Projeto atualizado com sucesso.' }
         format.json { render :show, status: :ok, location: @project }
       else
         format.html { render :edit }
@@ -59,7 +59,7 @@ end
   def destroy
     @project.destroy
     respond_to do |format|
-      format.html { redirect_to projects_url, notice: 'Project was successfully destroyed.' }
+      format.html { redirect_to projects_url, notice: 'Projeto deletado com sucesso.' }
       format.json { head :no_content }
     end
   end
@@ -75,3 +75,5 @@ end
       params.require(:project).permit(:name, :owner, :description)
     end
 end
+
+

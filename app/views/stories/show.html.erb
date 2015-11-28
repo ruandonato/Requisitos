@@ -1,38 +1,38 @@
 <div class="page-header">
   <%= link_to stories_path, class: 'btn btn-default' do %>
     <span class="glyphicon glyphicon-list-alt"></span>
-    Back
+    Voltar
   <% end %>
   <%= link_to edit_story_path(@story), class: 'btn btn-primary' do %>
     <span class="glyphicon glyphicon-pencil"></span>
-    Edit
+    Editar
   <% end %>
-  <h1>Show story</h1>
+  <h1>Detalhes da História</h1>
 </div>
 
 <dl class="dl-horizontal">
-  <dt>Description:</dt>
+  <dt>Descrição:</dt>
   <dd><%= @story.description %></dd>
 
   <dt>Status:</dt>
   <dd><%= @story.status %></dd>
 
-  <dt>Estimate:</dt>
+  <dt>Estimativa:</dt>
   <dd><%= @story.estimate %></dd>
 
-  <dt>Acceptance:</dt>
+  <dt>Critérios:</dt>
   <dd><%= @story.acceptance %></dd>
 
-  <dt>Observations:</dt>
+  <dt>Observações:</dt>
   <dd><%= @story.observations %></dd>
 
-  <dt>Task:</dt>
+  <dt>Tarefas:</dt>
   <dd><%= @story.task %></dd>
 
   <dt>Release:</dt>
   <dd><%= @story.release %></dd>
 
-  <dt>Project:</dt>
+  <dt>Projeto:</dt>
   <dd><%= @story.project.name %></dd>
 
 </dl>
