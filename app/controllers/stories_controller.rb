@@ -4,12 +4,8 @@ class StoriesController < ApplicationController
   # GET /stories
   # GET /stories.json
   def index
-    if params[:search]
     @stories = Story.where("description like '%#{params[:search]}%'")
-    else
-    @stories = Story.all
   end
-end
 
   # GET /stories/1
   # GET /stories/1.json
@@ -33,7 +29,7 @@ end
 
     respond_to do |format|
       if @story.save
-        format.html { redirect_to @story, notice: 'Story was successfully created.' }
+        format.html { redirect_to @story, notice: 'História criada com sucesso.' }
         format.json { render :show, status: :created, location: @story }
       else
         format.html { render :new }
@@ -47,7 +43,7 @@ end
   def update
     respond_to do |format|
       if @story.update(story_params)
-        format.html { redirect_to @story, notice: 'Story was successfully updated.' }
+        format.html { redirect_to @story, notice: 'História atualizada com sucesso.' }
         format.json { render :show, status: :ok, location: @story }
       else
         format.html { render :edit }
@@ -61,7 +57,7 @@ end
   def destroy
     @story.destroy
     respond_to do |format|
-      format.html { redirect_to stories_url, notice: 'Story was successfully destroyed.' }
+      format.html { redirect_to stories_url, notice: 'História deletada com sucesso.' }
       format.json { head :no_content }
     end
   end
